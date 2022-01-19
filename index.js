@@ -133,3 +133,7 @@
           console.log(vazifalar[rejIndex].isRejected);
           DrawList()
        }
+
+// New Add 
+
+
