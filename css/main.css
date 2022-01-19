@@ -1,0 +1,18 @@
+.texts{
+    padding: 10px;
+}
+.price{
+    background-color: red;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+}
+.bordd{
+    width: 200px;
+    margin: 20px 10px;
+    border: none;
+    transition: 0.4s;
+}
+.bordd:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}

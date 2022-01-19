@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="style/style.css">
+    <title>ClickUp | SYS</title>
+</head>
+<body class="bg-dark">
+    <div class="container-fluid">
+        <div class="row my-3">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header bg-secondary text-white text-center">
+                        <h4>Vazifa qo'shish</h4>
+                    </div>
+                    <div class="card-footer">
+                        <form name="myForm">
+                            <label class="mt-3 mb-1" for="vazifa"> 1.Vazifani kiriting :</label>
+                            <textarea name="a1" id="vazifa" cols="30" rows="3" class="form-control"></textarea>
+                            <label class="mt-3 mb-1" for="date">2.Boshlanish vaqti:</label>
+                            <input type="date" name="a2" id="date" class="form-control">
+                            <label class="mt-3 mb-1" for="date2">3.Tugash vaqti:</label>
+                            <input name="a3" type="date" class="form-control" id="date2">
+                              <label class="mt-3 mb-1" for="xodim">4.Xodim tanlang:</label>
+                               <select name="a4" id="xodim" class="form-control">
+                                   <option selected disabled>Tanlang</option>
+                                   <option value="ali">Ali</option>
+                                   <option value="vali">Vali</option>
+                                   <option value="eshmat">Eshmat</option>
+                               </select>
+                               <label class="mt-3 mb-1" for="jarayon">4.Jarayon tanlang:</label>
+                               <select  name="a5" id="jarayon" class="form-control">
+                                   <option selected disabled>Tanlang</option>
+                                   <option value="pending">pending</option>
+                                   <option value="doing">doing</option>
+                               </select>
+                               <button onclick="addTask()" type="button" class="btn w-100 bg-secondary text-white mt-4 mb-2">add Task</button> 
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header bg-warning text-white text-center">
+                        <h4>Panding Task</h4>
+                    </div>
+                    <div class="card-body" id="PandingTask"></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h4>Doing Task</h4>
+                    </div>
+                    <div class="card-body" id="DoingTask">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header bg-success text-white text-center">
+                        <h4>Done Task</h4>
+                    </div>
+                    <div class="card-body" id="DoneTask"></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header bg-danger text-white text-center">
+                        <h4>Rejected Task</h4>
+                    </div>
+                    <div class="card-body" id="RejectedTask"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
+
+
